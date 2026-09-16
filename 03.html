@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#eff9ff">
+<title>致孙文喆的一封信</title>
+<style>
+:root{--b:#255b91;--bd:#174875;--paper:#fffef8;--txt:#687480}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;min-height:100vh;font-family:"Microsoft YaHei","PingFang SC",sans-serif;color:var(--txt);overflow-x:hidden;background:
+linear-gradient(0deg,rgba(39,94,145,.045) 1px,transparent 1px),
+linear-gradient(90deg,rgba(39,94,145,.045) 1px,transparent 1px),
+linear-gradient(180deg,#e9f8ff,#fff9df);background-size:22px 22px,22px 22px,auto}
+.page{max-width:760px;margin:auto;padding:16px 12px 40px}
+.card{background:var(--paper);border:7px solid #5579a1;box-shadow:10px 12px 0 rgba(217,193,140,.32);overflow:hidden;position:relative}
+.head{text-align:center;padding:34px 18px 26px;background:linear-gradient(#d7f2ff,#fffada);border-bottom:8px solid transparent;border-image:repeating-linear-gradient(90deg,#91b9d3 0 17px,#eadcaf 17px 28px) 8;position:relative}
+.en{max-width:590px;margin:0 auto 22px;padding:10px 12px;background:#fff;border:4px solid #5579a1;box-shadow:7px 8px 0 rgba(85,121,161,.17);color:#587396;font-weight:900;font-size:clamp(13px,2.5vw,22px);letter-spacing:.09em;white-space:nowrap;position:relative}
+.en .star{position:absolute;left:-20px;top:-20px;font-size:38px}.en .mail{position:absolute;right:-16px;top:-17px;font-size:28px}
+h1{margin:0 auto;max-width:640px;color:var(--b);font-size:clamp(31px,6.5vw,54px);line-height:1.22;font-weight:1000;text-shadow:2px 2px #fff}
+.motto{display:inline-block;margin-top:18px;padding:8px 17px;background:#fff;border:4px solid #8bb1d0;box-shadow:7px 7px 0 rgba(85,121,161,.15);color:#456b90;font-size:clamp(17px,3.5vw,27px);font-weight:900}
+.balloon,.rainbow{position:absolute;bottom:13px;font-size:29px}.balloon{left:34px}.rainbow{right:34px}
+.lower{padding:28px 34px 40px;text-align:center;position:relative}
+.musicrow{display:flex;justify-content:center;margin-bottom:12px}.music{padding:8px 14px;border:2px solid #aec6d8;background:#f6fbff;color:#426a8f;font-weight:800;border-radius:999px}.music.on{background:linear-gradient(90deg,#eef7ff,#fff0f6)}
+.envwrap{width:170px;height:132px;margin:2px auto 10px;position:relative;perspective:800px}
+.stage{position:absolute;left:50%;top:50%;width:150px;height:92px;transform:translate(-50%,-42%);transform-style:preserve-3d;filter:drop-shadow(7px 9px 0 rgba(85,121,161,.12))}
+.back{position:absolute;inset:0;background:#f4fbff;border:4px solid #58bde7;z-index:1}
+.sheet{position:absolute;left:18px;right:18px;top:17px;height:78px;background:#fff;border:2px solid #c5d8e4;z-index:2;display:flex;align-items:flex-start;justify-content:center;padding-top:10px;color:#f3bd3e;font-size:22px;transition:transform .9s cubic-bezier(.2,.82,.2,1),height .7s}
+.sheet:after{content:"给你的信";position:absolute;top:40px;color:#7a92a7;font-size:12px;font-weight:700}
+.flap{position:absolute;left:0;right:0;top:0;height:56px;background:#fff0b2;border:4px solid #58bde7;border-bottom:0;clip-path:polygon(0 0,100% 0,50% 100%);transform-origin:50% 0;transition:transform .8s cubic-bezier(.2,.8,.2,1);z-index:5;backface-visibility:hidden}
+.front{position:absolute;inset:0;z-index:4;overflow:hidden;pointer-events:none}
+.front:before,.front:after{content:"";position:absolute;bottom:0;width:60%;height:64px;background:#f8fcff;border-bottom:4px solid #58bde7}
+.front:before{left:0;clip-path:polygon(0 0,100% 100%,0 100%);border-left:4px solid #58bde7}.front:after{right:0;clip-path:polygon(0 100%,0 0,100% 100%);border-right:4px solid #58bde7}
+.seal{position:absolute;left:50%;top:34px;width:34px;height:34px;transform:translateX(-50%);z-index:7;border-radius:50%;border:3px solid #fff;background:linear-gradient(145deg,#ffb2cb,#ef7ba4);display:flex;align-items:center;justify-content:center;color:#fff;font-size:17px;box-shadow:3px 4px 0 rgba(157,85,112,.16);transition:.35s}
+.envwrap.pre .stage{animation:wiggle .55s ease}@keyframes wiggle{0%,100%{transform:translate(-50%,-42%) rotate(0)}25%{transform:translate(-50%,-42%) rotate(-2deg)}60%{transform:translate(-50%,-42%) rotate(2deg)}}
+.envwrap.unseal .seal{transform:translateX(-50%) scale(.35) rotate(-18deg);opacity:0}.envwrap.open .flap{transform:rotateX(180deg);z-index:0}.envwrap.rise .sheet{transform:translateY(-58px);height:104px}
+.copy{margin:0 0 23px;color:var(--b);font-size:clamp(23px,4vw,34px);font-weight:1000}
+.label{max-width:610px;margin:0 auto 8px;text-align:left;color:#587497;font-size:17px;font-weight:900}
+.namebox{max-width:610px;min-height:77px;margin:0 auto 22px;border:4px solid #8eb2cf;background:#fff;display:flex;align-items:center;justify-content:center;color:var(--b);font-size:clamp(24px,4.8vw,36px);font-weight:1000;letter-spacing:.08em}
+.openbtn{min-height:63px;padding:13px 31px;border:5px solid var(--bd);background:linear-gradient(#2e79b8,#2768a2);color:#fff;box-shadow:8px 9px 0 rgba(85,121,161,.23);font-size:clamp(19px,3.7vw,27px);font-weight:1000}
+.bars{position:absolute;right:0;bottom:0;width:105px;height:100px;background:linear-gradient(90deg,#ffd95f 0 18%,transparent 18% 28%,#b9e5bf 28% 46%,transparent 46% 56%,#8ed2f0 56% 74%,transparent 74% 84%,#f2bfd7 84% 100%)}
+.letter{display:none;padding:25px 34px 42px;text-align:left}.show-letter .lower{display:none}.show-letter .letter{display:block}
+.section{opacity:0;transform:translateY(12px);transition:.65s}.section.visible{opacity:1;transform:none}
+.salute{color:var(--b);font-size:clamp(24px,4vw,34px);font-weight:1000;margin-bottom:20px}
+.para{margin:0 0 18px;color:#687480;font-family:"Songti SC","STSong",serif;font-size:16px;line-height:2.05;text-align:justify}
+.soft{margin:24px 0;padding:18px;background:linear-gradient(135deg,#eef8ff,#fff1f6 48%,#fff8df);border:2px solid #e8dcc8}.soft h3{margin:0 0 8px;color:var(--b)}.soft p{margin:0;line-height:1.9}
+.poem{margin:27px 0;padding:20px;text-align:center;color:var(--b);font-family:"STKaiti","KaiTi",serif;font-size:20px;line-height:1.95;border-top:2px solid #eadfc8;border-bottom:2px solid #eadfc8;background:linear-gradient(90deg,transparent,#fff9e8,transparent)}
+.platform{margin:26px 0;padding:20px;border:2px solid #e7dbc8;background:linear-gradient(#fffdf5,#fff4f8 40%,#eef9ff 75%,#fff8e5)}.platform h3{margin:0 0 8px;color:var(--b)}.platform p{margin:0;line-height:1.85}
+.toggle{margin-top:12px;padding:9px 15px;border:2px solid #b7ccdf;background:#fff;color:var(--b);font-weight:900}
+.cards{display:none;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:15px}.cards.show{display:grid}
+.mini{padding:14px;border:1px solid #dfe7ee;background:#fff}.mini:nth-child(1){background:#eff9ff}.mini:nth-child(2){background:#fff2f7}.mini:nth-child(3){background:#f4fff3}.mini:nth-child(4){background:#fff8e7}.mini:nth-child(5){background:#f4f1ff}.mini:nth-child(6){background:#eefcff}
+.mini h4{margin:0 0 7px;color:var(--b)}.mini p{margin:0 0 8px;line-height:1.7;font-size:13.5px}.links{display:flex;flex-wrap:wrap;gap:7px}.link{text-decoration:none;color:#41688e;background:#fff;border:1px solid #cfe0ec;padding:6px 9px;font-size:12px;font-weight:800}
+.sign{margin-top:27px;text-align:right;color:var(--b);font-weight:900;line-height:1.9}.actions{text-align:center;margin-top:25px;padding-top:17px;border-top:2px dashed #e3d8c5}.action{margin:4px;padding:9px 15px;border:2px solid #b9cde0;background:#fff;color:var(--b);font-weight:900}
+.final{display:none;margin:16px auto 0;max-width:620px;padding:18px;text-align:center;border:2px solid #e4d8c6;background:linear-gradient(135deg,#fff2f7,#edf8ff,#fff8df,#f2faed);color:var(--b);font-family:"STKaiti","KaiTi",serif;font-size:18px;line-height:1.9}.final.show{display:block}
+.floatlayer{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:50}.floaty{position:absolute;top:-30px;opacity:.7;animation:fall linear forwards}@keyframes fall{0%{transform:translate3d(0,-20px,0);opacity:0}12%{opacity:.72}100%{transform:translate3d(var(--drift),110vh,0) rotate(220deg);opacity:0}}
+.invalid{display:none;padding:35px 24px 46px;text-align:center;color:var(--b)}.invalid p{line-height:1.8;color:#758397}
+@media(max-width:650px){.page{padding:0 0 28px}.card{border-width:5px}.head{padding:27px 12px 24px}.en{font-size:12px;border-width:4px;padding:8px 5px}h1{font-size:31px}.motto{border-width:3px;font-size:18px}.balloon{left:16px}.rainbow{right:16px}.lower{padding:25px 14px 38px}.envwrap{transform:scale(.92);margin-top:-4px}.copy{font-size:25px}.namebox{min-height:72px;font-size:28px}.openbtn{border-width:4px;font-size:22px}.letter{padding:22px 17px 36px}.para{font-size:15.5px}.cards{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.floatlayer{display:none}}
+
+/* typography refinement */
+.letter{
+  font-family:"Songti SC","STSong","Noto Serif CJK SC","Source Han Serif SC","Microsoft YaHei",serif;
+}
+.salute{
+  font-family:"STKaiti","KaiTi","Songti SC",serif;
+  letter-spacing:.035em;
+}
+.para{
+  color:#596777;
+  font-size:16.4px;
+  line-height:2.14;
+  letter-spacing:.025em;
+  text-align:justify;
+}
+.soft h3,.platform h3,.mini h4{
+  font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;
+  letter-spacing:.015em;
+}
+.soft p,.platform p,.mini p{
+  font-family:"Songti SC","STSong","Noto Serif CJK SC","Microsoft YaHei",serif;
+  color:#607083;
+}
+.platform{
+  padding:24px 22px;
+  border-radius:18px;
+  box-shadow:0 8px 22px rgba(68,94,126,.045);
+}
+.platform h3{
+  font-size:19px;
+  line-height:1.75;
+}
+.platform-tip{
+  margin:10px 0 0!important;
+  padding:10px 12px;
+  border-left:3px solid #9bbdd9;
+  background:rgba(255,255,255,.58);
+  color:#738397!important;
+  font-size:13.5px!important;
+  line-height:1.8!important;
+}
+.toggle{
+  margin-top:16px;
+  padding:10px 18px;
+  border-radius:8px;
+  box-shadow:3px 4px 0 rgba(65,104,142,.08);
+}
+.cards{
+  gap:14px;
+  margin-top:18px;
+}
+.mini{
+  padding:18px 16px;
+  border-radius:12px;
+  box-shadow:0 7px 18px rgba(64,87,115,.04);
+}
+.mini h4{
+  font-size:17px;
+  line-height:1.55;
+  margin-bottom:9px;
+}
+.mini p{
+  font-size:14.2px;
+  line-height:1.9;
+  letter-spacing:.02em;
+}
+.links{
+  margin-top:10px;
+}
+.link{
+  border-radius:6px;
+  padding:8px 11px;
+}
+.poem{
+  letter-spacing:.04em;
+}
+@media(max-width:650px){
+  .para{font-size:15.8px;line-height:2.08}
+  .platform{padding:20px 16px}
+  .platform h3{font-size:18px}
+  .mini{padding:16px 14px}
+  .mini p{font-size:14px;line-height:1.86}
+}
+
+
+@media(max-width:650px){
+  .audio-panel{padding:10px 11px;margin-bottom:15px}
+  .audio-title{font-size:13px}
+}
+
+</style>
+</head>
+<body>
+<div id="floatLayer" class="floatlayer"></div>
+<main class="page"><section id="card" class="card">
+<header class="head"><div class="en"><span class="star">⭐</span>BETTER STUDENTS · BRIGHTER TOMORROW<span class="mail">💌</span></div><h1>💫 请收下这封来自电信研会的信 💌</h1><div class="motto">山高路远 · 未来可期</div><div class="balloon">🎈</div><div class="rainbow">🌈</div></header>
+
+<section id="valid">
+<div class="lower">
+<div class="musicrow">
+          <button id="musicBtn" class="music" type="button">🎵 音乐：关闭</button>
+          <audio id="bgAudio" preload="metadata" loop>
+            <source src="canon.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div id="envWrap" class="envwrap"><div class="stage"><div class="back"></div><div class="sheet">✉</div><div class="flap"></div><div class="front"></div><div class="seal">♥</div></div></div>
+<h2 class="copy">这封信，想认真地写给你。</h2>
+<div class="label">收信人姓名</div><div id="nameBox" class="namebox">孙文喆</div>
+<button id="openBtn" class="openbtn">点击拆开这封信 ✨</button><div class="bars"></div>
+</div>
+
+<article class="letter">
+<div class="section salute">亲爱的 <span id="bodyName">孙文喆</span> 同学：</div>
+<p class="section para">你好～真的非常感谢你抽出时间来参加学院研会的招新面试，我们很开心能在面试中认识你！你的积极参与和认真准备，让我们感受到了你对研会工作的热情与期待🔥你在面试里的精彩表现，我们印象深刻，也十分欣赏！</p>
+<p class="section para">因为招新名额有限制，加上考虑到课题组的科研压力等多方面因素，我们反复斟酌，最终没能邀请你加入本届研会的核心干事团队😢这是一大遗憾，但这绝对不是一次失败，也不意味着你不优秀！！！</p>
+<div class="section soft"><h3>我们依然希望能和你保持联结💞</h3><p>我们非常珍惜你的这份热情，也真诚希望你能保持住！虽然暂时不能以干事的身份共事，但我们依然希望能和你保持联结💞</p></div>
+<p class="section para">我们正在组建【电信研会志愿人才储备队】，非常欢迎你加入：后续研会的各类活动和志愿项目，我们都会优先在志愿队发布招募信息，像篮球赛、羽毛球赛、音乐会这些大型活动，我们需要靠谱、有能力的同学担任协作的组长。如果可以，我们希望你能来！你可以根据自己的时间和兴趣灵活参与，也能在这里认识更多志同道合的伙伴。关于这个具体，后续我们会继续完善，如果你感兴趣、愿意加入的，可以回复我，我会邀请你进群🔆请不用有负担，即使不加入，你也可以在学院群和公众号看到我们的各种活动～</p>
+<div class="section poem">愿你继续热烈，继续明亮。<br>愿你在更适合自己的地方，<br>被看见、被珍惜，也一路生花。✨</div>
+<p class="section para">除此之外，我们觉得你非常出彩，可以在更多地方闪闪发光🌟电信研会只是其中一个平台，我们没有留下你，但还有更绚丽的花朵💐更广阔的天空🌈等着你！</p>
+
+<section class="section platform">
+  <h3>🎈如果你喜欢参与学生工作，也想要结识更多朋友，我们整理了一些其他可以报名的、值得关注的学生组织和平台，供你参考：</h3>
+  <p class="platform-tip">点击下方“展开参考平台”，即可查看对应平台介绍与推文链接。</p>
+  <button id="toggleBtn" class="toggle">展开参考平台</button>
+  <div id="cards" class="cards">
+    <div class="mini">
+      <h4>🩵【校研究生会】</h4>
+      <p>校级层面的研究生组织，平台更大、活动类型更丰富，有机会接触到各学院的同学，可以拓展跨院社交、参与校级大型活动，推荐！</p>
+      <div class="links"><a class="link" href="https://mp.weixin.qq.com/s/gnPHC2GBBBGwPAfpgwC-ew" target="_blank">查看推文</a></div>
+    </div>
+
+    <div class="mini">
+      <h4>🩷【校级职能类平台】</h4>
+      <p>校团委、就业指导中心、华工青年的文字编辑等，其中就业指导中心本年度招新已截止，可以后续关注其春季补招或日常活动，而且这里面有一些是有补贴的，推荐！</p>
+      <div class="links">
+        <a class="link" href="https://mp.weixin.qq.com/s/bBDdxozGGx0WT8aiz79iMQ" target="_blank">链接1</a>
+        <a class="link" href="https://mp.weixin.qq.com/s/K47_bxrNgCs3z_DKYesSYw" target="_blank">链接2</a>
+        <a class="link" href="https://mp.weixin.qq.com/s/75YJXVGsHmQhQjIQkPQO2g" target="_blank">链接3</a>
+      </div>
+    </div>
+
+    <div class="mini">
+      <h4>🩵【纳睿雷达工作坊】</h4>
+      <p>电信学院的学术实践类平台，偏向学术学习与科研交流，适合想要深耕专业、参与学术实践的同学，推荐！</p>
+      <div class="links"><a class="link" href="https://mp.weixin.qq.com/s/use-iXh3135buTc6p7PymA" target="_blank">查看推文</a></div>
+    </div>
+
+    <div class="mini">
+      <h4>🩷【新智学会】</h4>
+      <p>在国际校区参与度较高的社群组织，氛围轻松开放，侧重思想碰撞与社群交流，也会组织各类休闲社交活动，近期正在招新，是非常自由且丰富的一个组织，可以打开思维，也能交友娱乐，推荐！</p>
+      <div class="links"><a class="link" href="https://mp.weixin.qq.com/s/fXk81tcTjY5BIN5P-pfl8g" target="_blank">查看推文</a></div>
+    </div>
+
+    <div class="mini">
+      <h4>🩵“一站式”学生社区管委会</h4>
+      <p>在这里你可以参与组织各类活动，包括观影、参观各类博物馆、文化中心、植物园等，还可以有生日会、校园寻宝、手工制作等，而且就在国际校区就能参加，推荐！</p>
+      <div class="links"><a class="link" href="https://mp.weixin.qq.com/s/DFNVHBG5cIjRvD_kEsKurw" target="_blank">查看推文</a></div>
+    </div>
+
+    <div class="mini">
+      <h4>🩷【各类学生社团】</h4>
+      <p>往年 10 月左右会在国际校区柠檬音乐节当天开展集中摆摊招新，有兴趣、文体、学术等多个类型，你可以留意，总会有你感兴趣的！</p>
+      <div class="links">
+        <a class="link" href="https://mp.weixin.qq.com/s/kiQXK_bIYwJ5cfPFnrGdhw" target="_blank">链接1</a>
+        <a class="link" href="https://mp.weixin.qq.com/s/KOQoMmu_CjiwHjQBIhSr2g" target="_blank">链接2</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p class="section para">再次感谢你对学院研会的认可与支持，研会的活动永远期待你的参与，也欢迎关注我们的公众号动态！即使不是研会成员，你也可以随时找我们交流，作为师兄师姐，我们会很乐意很开心和你聊天！！！</p>
+<div class="section poem">祝你学业顺利，生活愉快，在研究生阶段收获属于自己的成长与闪光！</div>
+<div class="section sign">电信学院研究生会<br>2026年9月</div>
+<div class="section actions"><button id="wishBtn" class="action">收到这份心意 💗</button></div>
+<div id="final" class="final">愿你在热爱的路上一路生花，<br>也愿我们下一次相遇时，都已经走到了更喜欢的地方。✨</div>
+</article></section>
+
+<section id="invalid" class="invalid"><h2>💌 这是一封专属信函</h2><p>请使用发送给你的专属链接打开。<br>当前链接没有对应的收信人。</p></section>
+</section></main>
+
+<script>
+(function(){
+const person='孙文喆';
+const valid=document.getElementById('valid'),invalid=document.getElementById('invalid'),card=document.getElementById('card');
+const nameBox=document.getElementById('nameBox'),bodyName=document.getElementById('bodyName'),envWrap=document.getElementById('envWrap');
+const openBtn=document.getElementById('openBtn'),musicBtn=document.getElementById('musicBtn');
+const toggleBtn=document.getElementById('toggleBtn'),cards=document.getElementById('cards'),wishBtn=document.getElementById('wishBtn'),final=document.getElementById('final'),floatLayer=document.getElementById('floatLayer');
+const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+if(!person){valid.style.display='none';invalid.style.display='block';return;}
+nameBox.textContent=person;bodyName.textContent=person;document.title='致'+person+'的一封信';
+
+const bgAudio=document.getElementById('bgAudio');
+  let playing=false;
+
+  async function startMusic(){
+    if(!bgAudio) return;
+    try{
+      bgAudio.volume=0.55;
+      await bgAudio.play();
+      playing=true;
+      musicBtn.classList.add('on');
+      musicBtn.textContent='🎵 音乐：开启';
+    }catch(e){
+      // 部分手机浏览器可能仍需点击音乐按钮后播放
+    }
+  }
+
+  function stopMusic(){
+    if(!bgAudio) return;
+    bgAudio.pause();
+    playing=false;
+    musicBtn.classList.remove('on');
+    musicBtn.textContent='🎵 音乐：关闭';
+  }
+
+  function toggleMusic(){
+    playing && !bgAudio.paused ? stopMusic() : startMusic();
+  }
+
+  musicBtn.addEventListener('click',toggleMusic);
+
+const syms=['✨','⭐','🌸','✦','💫'];let ft=null;
+function addFloat(){if(reduce)return;const e=document.createElement('span');e.className='floaty';e.textContent=syms[Math.floor(Math.random()*syms.length)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(13+Math.random()*11)+'px';e.style.setProperty('--drift',((Math.random()-.5)*110)+'px');e.style.animationDuration=(6+Math.random()*5)+'s';floatLayer.appendChild(e);setTimeout(()=>e.remove(),12000);}
+function startFloats(){if(ft||reduce)return;addFloat();ft=setInterval(addFloat,1600)}startFloats();
+
+function reveal(){const els=[...document.querySelectorAll('.section')];if(reduce||!('IntersectionObserver'in window)){els.forEach(e=>e.classList.add('visible'));return}const ob=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');ob.unobserve(x.target)}}),{threshold:.08,rootMargin:'0px 0px -28px 0px'});els.forEach(e=>ob.observe(e));}
+openBtn.onclick=()=>{startMusic();envWrap.classList.add('pre');setTimeout(()=>envWrap.classList.add('unseal'),420);setTimeout(()=>envWrap.classList.add('open'),760);setTimeout(()=>envWrap.classList.add('rise'),1400);setTimeout(()=>{card.classList.add('show-letter');reveal();setTimeout(()=>{const f=document.querySelector('.section');if(f)f.classList.add('visible');card.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})},80)},2350)};
+document.addEventListener('visibilitychange',()=>{
+    if(document.hidden && bgAudio && !bgAudio.paused){
+      stopMusic();
+    }
+  });
+  toggleBtn.onclick=()=>{const s=!cards.classList.contains('show');cards.classList.toggle('show',s);toggleBtn.textContent=s?'收起参考平台':'展开参考平台'};
+wishBtn.onclick=()=>{final.classList.add('show');final.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'})};
+})();
+</script>
+<div style="position:fixed;right:6px;bottom:6px;font-size:9px;color:rgba(80,100,120,.28);z-index:999">P03</div></body></html>
